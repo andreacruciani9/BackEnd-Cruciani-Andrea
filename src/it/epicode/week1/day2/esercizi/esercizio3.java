@@ -7,25 +7,28 @@ public class esercizio3 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("inserisci una parola");
-        String parole= scanner.next();
-        suddividere(parole);
+       String parola = scanner.next();
+        while (!parola.equals(":q")) {
+            suddividere(parola);
+            System.out.println("inserisci una parola");
+            parola = scanner.next();
 
+        }
     }
-   public static String[] suddividere(String frase) {
+   public static void suddividere(String frase) {
 
-       int i = 0;
+        String[] frasi = frase.split("");;
+        System.out.println(Arrays.toString(frasi));
 
-       String[] frasi = frase.split("");;
-       while (i <= 1) {
-           i++;
-           System.out.println(Arrays.toString(frasi));
+
+
 
 
        }
-       return frasi;
 
 
-   }}
+
+   }
 
 
 
