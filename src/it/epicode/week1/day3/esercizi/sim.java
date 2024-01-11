@@ -3,14 +3,14 @@ package it.epicode.week1.day3.esercizi;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sim {
+/*public class sim {
     private String numeroTelefono;
     private double credito;
     private double costoPerSecondo;
     private List<String> ultimeChiamate;
 
 
-public sim(String numeroTelefono, double costoPerSecondo/*,String[] ArrayList*/){
+public sim(String numeroTelefono, double costoPerSecondo/*,String[] ArrayList){
     this.numeroTelefono=numeroTelefono;
     this.credito=0;
     this.costoPerSecondo=costoPerSecondo;
@@ -20,8 +20,8 @@ public sim(String numeroTelefono, double costoPerSecondo/*,String[] ArrayList*/)
 }
 
 public void datisim() {
-    String user = this.numeroTelefono + this.credito;
-    System.out.println(user);
+     this.numeroTelefono + this.credito;
+    System.out.println("il tuo numero è"+this.numeroTelefono+"il tuo credito è" +credito);
     for (String chiamata : ultimeChiamate) {
         System.out.println(chiamata);
     }
@@ -58,9 +58,28 @@ public void datisim() {
         }
         ultimeChiamate.add(chiamata);
     }
+}*/
+
+public class sim {
+    private String numero;
+    private  double costoAlSecondo;
+
+    private double credito;
+    private  String[] chiamate;
+
+
+
+
+public sim(String numero,double costoAlSecondo){
+this.numero=numero;
+
+this.costoAlSecondo=costoAlSecondo;
+
+chiamate=new String[5];
 }
 
 
 
 
+}
 

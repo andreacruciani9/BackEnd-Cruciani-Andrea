@@ -18,5 +18,11 @@ public class automobile {
 
      auto.decellera();
 
+     day3 auto2=new day3("fiat","500","AZ341",1500,5);
+        System.out.println("cilindrata: " + auto2.cilindrata + " ,marca " + auto2.marca + ",nome " + auto2.nome + ", porte: " + auto2.porte + ", targa: " + auto2.targa);
+
+   day3 auto3=auto;
+
+
     }
 }

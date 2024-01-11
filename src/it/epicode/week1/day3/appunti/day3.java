@@ -19,7 +19,14 @@ this.marca=marca;
  }
  //all'interno della classe posso avere anche PIù costruttori e devono  avere anche lo stesso nome perche il costruttore deve avere il nome della classe,
     //ma  non devono avere i stessi parametri,o cambi posto ai paramatri nel costruttore o cambi il tipo
-    public day3(){}
+    public day3(String marca,String nome,String targa, int cilindrata){
+        this.marca=marca;
+        this.nome=nome;
+        this.targa=targa;
+        this.cilindrata=cilindrata;
+
+
+    }
 
     //metodo
     public  void accellera(){
