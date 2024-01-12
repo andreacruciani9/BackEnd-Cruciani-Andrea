@@ -25,4 +25,10 @@ abstract public class MediaElement {
     public void setDurata(int durata) {
         this.durata = durata;
     }
+
+    public void play() {
+    }
+
+    public void show() {
+    }
 }
