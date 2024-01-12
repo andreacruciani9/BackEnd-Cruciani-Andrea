@@ -1,5 +1,6 @@
 package it.epicode.week1.day3.appunti.usa;
 
+import it.epicode.week1.day3.appunti.TipiDiAuto;
 import it.epicode.week1.day3.appunti.day3;
 
 public class automobile {
@@ -11,17 +12,24 @@ public class automobile {
         auto.nome="500";
         auto.porte=3;
         auto.targa="AZ3432";
-*/
-        System.out.println("cilindrata: " + auto.cilindrata + " ,marca " + auto.marca + ",nome " + auto.nome + ", porte: " + auto.porte + ", targa: " + auto.targa);
+*///auto.categoria= TipiDiAuto.SUV;
+auto.stampa();
+
+auto.setMarca("Ford");
+auto.setNome("kuga");
+        System.out.println(auto.getMarca());
+        System.out.println(auto.getNome());
 
      auto.accellera();
 
      auto.decellera();
 
      day3 auto2=new day3("fiat","500","AZ341",1500,5);
-        System.out.println("cilindrata: " + auto2.cilindrata + " ,marca " + auto2.marca + ",nome " + auto2.nome + ", porte: " + auto2.porte + ", targa: " + auto2.targa);
-
+auto2.stampa();
    day3 auto3=auto;
+   //se imposto un nuovo dato a auto 3 cambiera anche il dato di auto perche sono collegati
+  // auto3.cilindrata=1700;
+   System.out.println(auto.equals(auto3 ));
 
 
     }

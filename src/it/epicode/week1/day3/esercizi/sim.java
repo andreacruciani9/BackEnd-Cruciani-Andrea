@@ -62,24 +62,59 @@ public void datisim() {
 
 public class sim {
     private String numero;
-    private  double costoAlSecondo;
+    private double costoAlSecondo;
 
-    private double credito;
-    private  String[] chiamate;
-
-
+    private double creditoDisponibile;
+    private String[] chiamate;
 
 
-public sim(String numero,double costoAlSecondo){
-this.numero=numero;
 
-this.costoAlSecondo=costoAlSecondo;
 
-chiamate=new String[5];
+    public sim(String numero, double costoAlSecondo,double creditoDisponibile, String[] chiamate) {
+        this.numero = numero;
+this.chiamate=chiamate;
+        this.costoAlSecondo = costoAlSecondo;
+        this.creditoDisponibile=creditoDisponibile;
+
+        chiamate = new String[5];
+    }
+    public double getCostoAlSecondo() {
+        return costoAlSecondo;
+    }
+
+    public double getCreditoDisponibile() {
+        return creditoDisponibile;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String[] getChiamate() {
+        return chiamate;
+    }
+
+    public void setCreditoDisponibile(double creditoDisponibile) {
+        this.creditoDisponibile = creditoDisponibile;
+
+
+    }
+
+
+
+    public  void leggiDati(){
+         String[] chiamare = new String[]{chiamate.toString()};
+        System.out.println("questo è il mio nummero "+ numero +",costo al secondo "+ costoAlSecondo + ", credito disponibile " + creditoDisponibile + ", lista chiamate " + chiamate );
+
+
+
+
+    }
+
+
+
 }
 
 
 
-
-}
 
