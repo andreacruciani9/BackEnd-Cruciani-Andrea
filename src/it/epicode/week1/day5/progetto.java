@@ -81,12 +81,15 @@ public class progetto {
             System.out.println("scegli tra 1 e 5 per selezionare gli eelmenti");
             scelta = scanner.nextInt();
             if (scelta > 0 && scelta <= 5) {
-                if (mediaElements[scelta].getClass() == Video.class || mediaElements[scelta].getClass() == Audio.class) {
+                if (mediaElements[scelta].getClass() == Video.class) {
                     mediaElements[scelta - 1].play();
 
                 } else if (mediaElements[scelta].getClass() == Imaggine.class) {
                     mediaElements[scelta - 1].show();
-                } else {
+                }else if ( mediaElements[scelta].getClass() == Audio.class){
+                    mediaElements[scelta-1].play();
+                }
+                else {
                     System.out.println("hai sbagliato");
                 }
             }
