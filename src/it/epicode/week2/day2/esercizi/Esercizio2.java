@@ -26,7 +26,7 @@ public class Esercizio2 {
         System.out.println(numerirandom);
         }
     }
-public ArrayList cambia(ArrayList e){
+/*public ArrayList cambia(ArrayList e){
 
 
-}
+}*/
