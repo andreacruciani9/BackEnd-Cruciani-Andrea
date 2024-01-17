@@ -18,11 +18,11 @@ public class CostruisciRubrica {
     }
 
     public void elimina(String nom) {
-        rubrica.remove(nom);
+        System.out.println(rubrica.remove(nom));
     }
 
-    public String searchNumber(String nom) {
-        return rubrica.get(nom);
+    public void searchNumber(String nom) {
+        System.out.println(rubrica.get(nom));
 
     }
 
@@ -37,8 +37,8 @@ public class CostruisciRubrica {
 
     public void allview() {
         for (Map.Entry<String, String> contact : rubrica.entrySet()) {
-            System.out.println(contact.getKey());
-            System.out.print(contact.getValue());
+            System.out.println("la chiave è " + contact.getKey());
+            System.out.println("il valore è " + contact.getValue());
             ;//entryset ti va a prendere tutto l'oggetto coppia chiave valore
 
         }

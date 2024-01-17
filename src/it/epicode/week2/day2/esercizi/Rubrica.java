@@ -12,9 +12,17 @@ public class Rubrica {
     public static void main(String[] args) {
 CostruisciRubrica rub=new CostruisciRubrica();
 
-aggiungi("ciccio","892424");
+        aggiungi("ciccio","892424");
         aggiungi("ciccia","892626");
         aggiungi("franco","892525");
+
+        rub.elimina("franco");
+
+        rub.allview();
+        System.out.println("il numero che stai cercando è : ");
+        rub.searchNumber("ciccia");
+        System.out.println("il nome che stai cercando è : ");
+        rub.searchNome("892424");
 
 
 
