@@ -58,11 +58,12 @@ public class Order {
     public void rimuovi(Product p){
         productList.remove(p);
     }
-    public List<Order> aggiungiOrdine(Custumer clienti,Product l){
+    //public List<Order> aggiungiOrdine(Custumer c,Product p) {
 
-        return new ArrayList<Order> (Integer.parseInt(clienti+l.getName()));
+        //return new ArrayList<Order> (Integer.parseInt(clienti+l.getName()));
 
-        }
+
+
 
 
     @Override
@@ -75,5 +76,8 @@ public class Order {
                 ", productList=" + productList +
                 '}';
     }
-}
+
+
+    }
+
 

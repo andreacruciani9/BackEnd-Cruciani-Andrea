@@ -26,8 +26,7 @@ public class Amatop {
 
         //crea ordine
         Order order = new Order(c1);
-
-
+//order.aggiungiOrdine(1,2)
 
         //creo listra prodotti
         List<Product> products = List.of(p1, p2, p3, p4, p5, p6);
@@ -37,6 +36,7 @@ public class Amatop {
         List<Product> prodottifil = listaprodotti.filter(list -> list.getCategoria().contains("Book") && list.getPrice() > 100).toList();
         prodottifil.forEach(System.out::println);
 
-        List <Order> orders = List.of(p1, p2, p3,p4,p5)
+
+
     }
 }
