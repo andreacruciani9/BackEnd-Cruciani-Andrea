@@ -1,0 +1,8 @@
+select numerofattura from public.fatture where iva='20' ;
+select * from public.fatture;
+select * from public.prodotti;
+select * from public.prodotti where extract(year from dataattivazione)=2017 and (inproduzione =true or incommercio =true);
+select * from public.fatture f inner join public.clienti c on f.idcliente=c.numerocliente where importo <1000;
+select numerofattura,importo,iva,datafattura,denominazione from public.fatture f inner join public.fornitori e on f.numerofornitore=e.numerofornitori;
+select count(*), extract(year from datafattura) as anno from public.fatture where iva=20 group by anno;
+select  count(*) , SUM(importo) ,extract( year from datafattura)as dataf from public.fatture GROUP BY dataf;
